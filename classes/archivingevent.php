@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Quiz activity archiving driver.
+ * Quiz activity archiving driver
  *
  * @package     archivingmod_quiz
  * @copyright   2025 Niels Gandraß <niels@gandrass.de>
@@ -32,7 +32,7 @@ defined('MOODLE_INTERNAL') || die(); // @codeCoverageIgnore
 
 
 /**
- * Quiz activity archiving driver.
+ * Quiz activity archiving driver
  */
 class archivingevent extends archivingevent_base {
 
