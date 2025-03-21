@@ -34,4 +34,6 @@ if ($hassiteconfig) {
     if ($ADMIN->fulltree) {
 
     }
+
+    // Settingpage is added to tree automatically. No need to add it manually here.
 }
