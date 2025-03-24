@@ -25,8 +25,6 @@
 
 namespace archivingevent_apistub;
 
-use local_archiving\driver\archivingevent_base;
-
 // @codingStandardsIgnoreFile
 defined('MOODLE_INTERNAL') || die(); // @codeCoverageIgnore
 
@@ -34,7 +32,7 @@ defined('MOODLE_INTERNAL') || die(); // @codeCoverageIgnore
 /**
  * Quiz activity archiving driver
  */
-class archivingevent extends archivingevent_base {
+class archivingevent extends \local_archiving\driver\event\archivingevent {
 
     /**
      * @inheritDoc archivingevent_base::get_name()
