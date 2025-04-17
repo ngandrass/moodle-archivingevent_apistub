@@ -34,11 +34,14 @@ defined('MOODLE_INTERNAL') || die(); // @codeCoverageIgnore
  */
 class archivingevent extends \local_archiving\driver\event\archivingevent {
 
-    /**
-     * @inheritDoc archivingevent_base::get_name()
-     */
+    #[\Override]
     public static function get_name(): string {
         return get_string('pluginname', 'archivingmod_quiz');
+    }
+
+    #[\Override]
+    public static function get_plugname(): string {
+        return 'apistub';
     }
 
 }
