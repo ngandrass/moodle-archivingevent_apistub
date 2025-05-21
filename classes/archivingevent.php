@@ -32,7 +32,7 @@ defined('MOODLE_INTERNAL') || die(); // @codeCoverageIgnore
 /**
  * Quiz activity archiving driver
  */
-class archivingevent extends \local_archiving\driver\event\archivingevent {
+class archivingevent extends \local_archiving\driver\archivingevent {
 
     #[\Override]
     public static function get_name(): string {
