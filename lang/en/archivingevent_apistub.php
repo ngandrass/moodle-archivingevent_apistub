@@ -26,3 +26,7 @@
 
 // Common
 $string['pluginname'] = 'API Stub';
+
+// Settings.
+$string['setting_enabled'] = 'Enabled';
+$string['setting_enabled_desc'] = 'Enables or disables this event connector.';

@@ -28,11 +28,16 @@ defined('MOODLE_INTERNAL') || die(); // @codeCoverageIgnore
 global $DB;
 
 if ($hassiteconfig) {
-    $settings = new admin_settingpage('archivingevent_apistub_settings', new lang_string('pluginname', 'archivingevent_apistub'));
+    $settings = new admin_settingpage('archivingevent_apistub', new lang_string('pluginname', 'archivingevent_apistub'));
 
     // phpcs:ignore Generic.CodeAnalysis.EmptyStatement.DetectedIf
     if ($ADMIN->fulltree) {
-
+        // Enabled.
+        $settings->add(new admin_setting_configcheckbox('archivingevent_apistub/enabled',
+            get_string('setting_enabled', 'archivingevent_apistub'),
+            get_string('setting_enabled_desc', 'archivingevent_apistub'),
+            '1'
+        ));
     }
 
     // Settingpage is added to tree automatically. No need to add it manually here.
