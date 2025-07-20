@@ -31,5 +31,5 @@ $plugin->requires = 2022112800;
 $plugin->supported = [401, 406];
 $plugin->maturity = MATURITY_ALPHA;
 $plugin->dependencies = [
-    'local_archiving' => 2025031900
+    'local_archiving' => 2025031900,
 ];
