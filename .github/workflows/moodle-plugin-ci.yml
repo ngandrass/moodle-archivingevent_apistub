@@ -76,7 +76,13 @@ jobs:
           echo "NVM_DIR=$HOME/.nvm" >> $GITHUB_ENV
 
       - name: Install moodle-plugin-ci
-        run: moodle-plugin-ci install --plugin ./plugin --db-host=127.0.0.1
+        run: |
+          # Install archiving core plugin to create a home for this sub-plugin.
+          moodle-plugin-ci add-plugin ngandrass/moodle-local_archiving
+          rm -rf "moodle-plugin-ci-plugins/moodle-local_archiving/driver/event/apistub"
+          
+          # Install this sub-plugin.
+          moodle-plugin-ci install --plugin ./plugin --db-host=127.0.0.1
         env:
           DB: ${{ matrix.database }}
           MOODLE_BRANCH: ${{ matrix.moodle-branch }}
@@ -135,7 +141,7 @@ jobs:
           if-no-files-found: ignore
 
       - name: Process coverage data via Coveralls
-        if: ${{ !cancelled() && matrix.moodle-branch == 'MOODLE_405_STABLE' && matrix.php == '8.3' && matrix.database == 'pgsql' }}
+        if: false # ${{ !cancelled() && matrix.moodle-branch == 'MOODLE_405_STABLE' && matrix.php == '8.3' && matrix.database == 'pgsql' }}
         uses: coverallsapp/github-action@v2
         with:
           format: clover
