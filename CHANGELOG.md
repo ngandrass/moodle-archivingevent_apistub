@@ -2,6 +2,7 @@
 
 ## Version X.Y.Z (YYYYMMDDHH)
 
+- Refactor code to comply with new Moodle coding standard v3.6
 - Add Moodle plugin CI for all supported Moodle versions
 
 

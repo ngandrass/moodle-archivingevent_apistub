@@ -33,7 +33,8 @@ if ($hassiteconfig) {
     // phpcs:ignore Generic.CodeAnalysis.EmptyStatement.DetectedIf
     if ($ADMIN->fulltree) {
         // Enabled.
-        $settings->add(new admin_setting_configcheckbox('archivingevent_apistub/enabled',
+        $settings->add(new admin_setting_configcheckbox(
+            'archivingevent_apistub/enabled',
             get_string('setting_enabled', 'archivingevent_apistub'),
             get_string('setting_enabled_desc', 'archivingevent_apistub'),
             '1'
