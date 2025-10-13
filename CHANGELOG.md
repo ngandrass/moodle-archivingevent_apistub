@@ -1,6 +1,6 @@
 # Changelog
 
-## Version X.Y.Z (YYYYMMDDHH)
+## Version 0.0.2 (2025101300)
 
 - Ensure Moodle 5.1 compatibility
 - Refactor code to comply with new Moodle coding standard v3.6
