@@ -26,6 +26,7 @@
 
 // Common
 $string['pluginname'] = 'API Stub';
+$string['privacy:metadata'] = 'This plugin does not store any personal data.';
 
 // Settings.
 $string['setting_enabled'] = 'Enabled';
