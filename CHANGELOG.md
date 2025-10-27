@@ -1,6 +1,6 @@
 # Changelog
 
-## Version X.Y.Z (YYYYMMDDXX)
+## Version 0.0.3 (2025102700)
 
 - Add Moodle privacy API provider
 

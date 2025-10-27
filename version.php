@@ -25,8 +25,8 @@
 defined('MOODLE_INTERNAL') || die(); // @codeCoverageIgnore
 
 $plugin->component = 'archivingevent_apistub';
-$plugin->release = '0.0.2';
-$plugin->version = 2025101300;
+$plugin->release = '0.0.3';
+$plugin->version = 2025102700;
 $plugin->requires = 2024100700;
 $plugin->supported = [405, 501]; // X meta-supported-moodle{4.5 - 5.1} meta-supported-php{8.1 - 8.4}.
 $plugin->maturity = MATURITY_ALPHA;
